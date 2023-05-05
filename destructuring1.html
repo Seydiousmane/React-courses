@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var array = ["Mark", "Léa", "Jean"]
+        console.log(array[0])
+
+        var [userOne, userTwo, userThree] = array;
+        console.log(userOne, userTwo, userThree) //Notion de destructuring
+
+        var [userOne, ...rest] = array;
+        console.log(rest)//"Léa", "Jean"
+
+        var members = {
+            userFour: "Ousmane",
+            userFive: "Babacar",
+            userSix: "Moussa"
+        }
+        console.log(members)
+        var membOne = members.userFour;
+
+        var {userFour, userFive, userSix} = members//Destructuring
+        //Mm demarche avec rest
+        console.log(userFour, userFive, userSix)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
